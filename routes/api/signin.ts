@@ -11,9 +11,6 @@ const inputData = d.object({
 
 export const handler: Handlers = {
   async POST(req) {
-    if (Deno.env.get("SIGNUP_ENABLED") !== "true") {
-      return new Response("Signup is disabled", { status: 403 });
-    }
     try {
       const formData = inputData.parse(
         Object.fromEntries(await req.formData())
