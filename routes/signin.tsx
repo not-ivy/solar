@@ -1,6 +1,6 @@
 import IconSunHigh from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/sun-high.tsx";
 
-export default function SignUp() {
+export default function SignIn() {
   return (
     <main class="max-w-screen-sm mx-auto min-h-screen flex items-center justify-center flex-col">
       <h1 class="flex gap-x-4 select-none mb-8">
