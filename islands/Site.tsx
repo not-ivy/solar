@@ -8,7 +8,7 @@ interface SiteProps {
 
 export default function Site({ url }: SiteProps) {
   return (
-    <div class="bg-gray-200 w-full h-32 rounded-md p-6 flex justify-between flex-col">
+    <div class="bg-gray-100 border-gray-200 border w-full h-32 rounded-md p-6 flex justify-between flex-col">
       <h3 class="font-medium flex items-center gap-x-4">
         <div class="w-2.5 h-2.5 bg-green-400 rounded-full" />
         <span>{url.replace(/https?:\/\//, "")}</span>
@@ -24,7 +24,10 @@ export default function Site({ url }: SiteProps) {
             <span class="text-sm">1:35</span>
           </span>
         </div>
-        <a href="" class="flex items-center gap-x-2">
+        <a
+          href={`/sites/${url.replace(/https?:\/\//, "")}`}
+          class="flex items-center gap-x-2"
+        >
           View
           <IconArrowNarrowRight class="w-5 h-auto" />
         </a>

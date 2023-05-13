@@ -36,7 +36,7 @@ export default function Dashboard({
       <Head>
         <title>Dashboard</title>
       </Head>
-      <div class="p-6 justify-between bg-gray-200 flex items-center  shadow-lg">
+      <div class="p-6 justify-between bg-gray-100 flex items-center shadow-lg">
         <span class="flex items-center gap-x-4 select-none">
           <IconSunHigh class="w-8 h-auto" />
           <span class="text-xl">Dashboard</span>
@@ -52,9 +52,7 @@ export default function Dashboard({
       <main class="mt-16 max-w-screen-xl mx-auto">
         <div class="grid grid-flow-row grid-cols-4 gap-4 h-full">
           <Site url="https://deno.land" />
-          {Array.from({ length: 30 }).map((_, i) => (
-            <div class="bg-gray-200 w-full h-32 rounded-md" key={i}></div>
-          ))}
+          <Site url="https://not-ivy.dev" />
         </div>
       </main>
     </>
